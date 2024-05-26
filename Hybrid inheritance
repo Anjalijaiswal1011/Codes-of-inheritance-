@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+
+class student {
+public:
+    void print() {
+        cout << "She is very intelligent" << endl;
+    }
+};
+
+class Girl {
+public:
+  void display ()  {
+        cout << "Enter two numbers: ";
+        cin >> a >> b;
+    }
+public:
+    int a = 24, b = 30;
+    int multi;
+};
+class neha  {
+public:
+void display()
+{
+cout << "hello ansha is my friend" << endl;
+}
+};
+
+class Ansha : public neha, public student{};
+class multi : public Girl
+{
+public:
+void sum()
+{
+cout << a+b <<endl;
+}
+};
+ 
+
+int main() {
+    
+    Ansha a;
+    multi m;
+    
+    a.display();
+    a.print();
+    m.sum();
+    return 0;
+    }
