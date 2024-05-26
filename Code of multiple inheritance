@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+class student {
+public:
+    void print () {
+        cout << "She is very intelligent" << endl;
+    }
+};
+
+class Girl {
+public:
+    void product () {
+        cout << "Enter two numbers: ";
+        cin >> a >> b;
+        multi = a * b;
+        cout << "The multiplication of " << a << "×" << b << " is " << multi << endl;
+    }
+private:
+    int a = 24, b = 30;
+    int multi;
+};
+
+class neha {
+public:
+    void display () {
+        cout << "hello ansha is my friend" << endl;
+    }
+};
+
+class Ansha : public neha, public student, public Girl {};
+
+int main() {
+    Ansha a;
+    a.display();
+    a.print();
+    a.product();
+    return 0;
+}
